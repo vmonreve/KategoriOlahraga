@@ -1,0 +1,449 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style Navbar */
+header {
+  background-color: #2c0b09;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: small;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  padding: 2px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: small;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-cta {
+  margin-right: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 0px 5px;
+  width: 100px;
+  background-color: #fff;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2c0b09;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+/* End Style Navbar */
+
+/* Style Artikel */
+.container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/basket1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-basket {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Artikel */
+
+/* Style Artikel Popular */
+.container-artikel {
+  background-color: #d9d9d9;
+  margin: 20px 10px 0px 10px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.title-artikel {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #510805;
+}
+
+.artikel-basket {
+  display: flex;
+  gap: 40px;
+}
+
+.img-basket {
+  margin-left: 30px;
+  border-radius: 10px;
+  filter: brightness(90%);
+}
+
+.isi-artikel {
+  flex: 1;
+  display: row;
+}
+
+.artikel1 {
+  display: flex;
+  border-radius: 10px;
+}
+
+.img-artikel {
+  border-radius: 10px;
+  filter: brightness(90%);
+}
+
+.p-basket {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.artikel2 {
+  display: flex;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+/* End Style Artikel Populer */
+
+/* Style Artikel Terbaru */
+.container-new {
+  margin-top: 120px;
+}
+
+.title-new {
+  color: #510805;
+  margin-left: 10px;
+}
+
+.card-article {
+  display: flex;
+  gap: 45px;
+  margin: 30px 10px 0px 10px;
+}
+
+.card-items-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #2e0c0a;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.img-new {
+  width: 385px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #fff;
+  padding: 0px 8px;
+}
+
+.description {
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0px 8px;
+}
+/* End Style Artikel Terbaru */
+
+/* Style Footer */
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 125px 0px 0px 0px;
+  background-color: #2c0b09;
+  padding: 10px;
+}
+
+.h3 {
+  color: #fff;
+  font-size: x-large;
+}
+
+.list {
+  display: flex;
+}
+
+.gambar-footer {
+  width: 20px;
+  height: 20px;
+  mix-blend-mode: exclusion;
+  filter: brightness(100%);
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.footer1 {
+  background-color: #2c0b09;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 11px;
+}
+/* End Style Article */
+
+/* Style Judul Artikel Workout */
+.container-title-workout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/workout1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-workout {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Workout */
+
+/* Style Judul Artikel Badminton */
+.container-title-badminton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/badminton1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-badminton {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Badminton */
+
+/* Style Judul Artikel Sepakbola */
+.container-title-sepakbola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/bola1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-sepakbola {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Judul Artikel Sepakbola */
+
+/* Style Judul Artikel Voli */
+.container-title-voli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/voli1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-voli {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Judul Artikel Voli */
+
+/* Style Judul Artikel Renang */
+.container-title-renang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/renang1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-renang {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Judul Artikel Renang */
+
+
+/* Style Halaman index.html / Kategori Artikel */
+
+.btn-cta1 {
+  margin-right: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 0px 5px;
+  width: 100px;
+  background-color: #fff;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2c0b09;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.container6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/artikel1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+}
+
+.title1 {
+  font-size: xx-large;
+  color: #fff;
+}
+
+.container7 {
+  max-width: 1200px;
+  max-height: auto;
+}
+
+.card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  margin: 0px 20px 0px 90px;
+  gap: 90px;
+}
+
+.card-item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  height: 270px;
+}
+
+.gambar1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: brightness(120%);
+}
+
+.isi {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.tombol {
+  color: #2e0c0a;
+  margin-top: 10px;
+  padding: 5px;
+  width: 125%;
+  cursor: pointer;
+}
+
+.gambar-basket {
+  background-image: url("img/1.jpg");
+  background-size: cover;
+  filter: brightness(100%);
+  border-radius: 5%;
+}
+
+.gambar-barbel {
+  background-image: url("img/2.jpg");
+  background-size: cover;
+  filter: brightness(100%);
+  border-radius: 5%;
+}
+
+.gambar-bola {
+  background-image: url("img/3.jpg");
+  background-size: cover;
+  filter: brightness(100%);
+  border-radius: 5%;
+}
+
+.gambar-bulu {
+  background-image: url("img/4.jpg");
+  background-size: cover;
+  filter: brightness(100%);
+  border-radius: 5%;
+}
+
+.gambar-voli {
+  background-image: url("img/5.jpg");
+  background-size: cover;
+  filter: brightness(100%);
+  border-radius: 5%;
+}
+
+.gambar-renang {
+  background-image: url("img/6.jpg");
+  background-size: cover;
+  filter: brightness(100%);
+  border-radius: 5%;
+}
+/* End Style Halaman Kategori Artikel */
