@@ -3,120 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article Olahraga</title>
+    <title>Detail Artikel Badminton</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="basket">
-      <!-- Navbar -->
-      <div>
-        <header>
-          <h1 class="logo">Eureka Sportive</h1>
-          <nav>
-            <ul>
-              <li><a href="https://vmonreve.github.io/HomeLogin/">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="index.html">Article</a></li>
-              <li><a href="https://vmonreve.github.io/ChatWithTrainer/">Chat With Trainer</a></li>
-            </ul>
-          </nav>
-          <button class="btn-cta"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
-        </header>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Eureka Sportive</h1>
+      <nav>
+        <ul>
+          <li><a href="https://vmonreve.github.io/HomeLogin/">Home</a></li>
+          <li><a href="https://vmonreve.github.io/AboutUs/">About Us</a></li>
+          <li><a href="index.html">Article</a></li>
+          <li><a href="https://vmonreve.github.io/ChatWithTrainer/">Chat With Trainer</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
       </div>
+    </header>
+    <!-- End Header -->
 
-      <!-- End Navbar -->
+    <!-- Judul Artikel -->
+    <main class="container-title-badminton">
+      <h1 class="title-badminton">Badminton</h1>
+    </main>
+    <!-- End Judul Artikel -->
 
-      <!-- Judul Artikel -->
-      <div class="container-title-badminton">
-        <h1 class="title-badminton">Badminton</h1>
-      </div>
-      <!-- End Judul Artikel -->
-
-      <!-- Artikel Populer -->
-      <div class="container-artikel">
-        <h1 class="title-artikel">Artikel Populer</h1>
-        <div class="artikel-basket">
-          <div>
-            <img src="img/badminton2.jpg" alt="" class="img-basket" />
+    <!-- Artikel Populer -->
+    <section class="container-artikel">
+      <h1 class="title-artikel">Artikel Populer</h1>
+      <div class="artikel-basket">
+        <div>
+          <img src="img/badminton2.jpg" alt="" class="img-basket" />
+        </div>
+        <div class="isi-artikel">
+          <div class="artikel1">
+            <img src="img/badminton3.jpg" alt="" class="img-artikel" />
+            <p class="p-basket">Ubah 10 kebiasaan buruk yang paling umum untuk meningkatkan kemampuan permainan Badminton kamu</p>
           </div>
-          <div class="isi-artikel">
-            <div class="artikel1">
-              <img src="img/badminton3.jpg" alt="" class="img-artikel" />
-              <p class="p-basket">Ubah 10 kebiasaan buruk yang paling umum untuk meningkatkan kemampuan permainan Badminton kamu</p>
-            </div>
-            <div class="artikel2">
-              <img src="img/badminton4.jpg" alt="" class="img-artikel" />
-              <p class="p-basket">Maret Indah untuk Tim Badminton Indonesia</p>
-            </div>
-            <div class="artikel2">
-              <img src="img/badminton5.jpg" alt="" class="img-artikel" />
-              <p class="p-basket">4 Teknik Dasar Bermain Bulu Tangkis atau Badminton</p>
-            </div>
+          <div class="artikel2">
+            <img src="img/badminton4.jpg" alt="" class="img-artikel" />
+            <p class="p-basket">Maret Indah untuk Tim Badminton Indonesia</p>
+          </div>
+          <div class="artikel2">
+            <img src="img/badminton5.jpg" alt="" class="img-artikel" />
+            <p class="p-basket">4 Teknik Dasar Bermain Bulu Tangkis atau Badminton</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- End Artikel Populer -->
+    <!-- End Artikel Populer -->
 
-      <!-- Artikel Terbaru -->
-      <div class="container-new">
-        <h1 class="title-new">Artikel Terbaru</h1>
-        <div class="card-article">
-          <div class="card-items-article">
-            <img src="img/badminton6.jpg" alt="" class="img-new" />
-            <p class="title">Cara Melakukan Teknik Smash dalam Bulu Tangkis</p>
-            <p class="description">Teknik smash merupakan salah satu jenis pukulan dalam permainan bulu tangkis. Smash adalah pukulan yang dilakukan dengan tenaga penuh...</p>
-          </div>
-          <div class="card-items-article">
-            <img src="img/badminton7.jpg" alt="" class="img-new" />
-            <p class="title">Cara Meningkatkan Stamina saat Bermain Badminton</p>
-            <p class="description">Stamina yang optimal sangat penting dalam permainan bulutangkis. Tingkat energi dan daya tahan yang tinggi akan membantu kamu bermain dengan...</p>
-          </div>
-          <div class="card-items-article">
-            <img src="img/badminton8.jpg" alt="" class="img-new" />
-            <p class="title">Indonesia Raih 2 Gelar di Spain Masters 2024, Maret Jadi Bulan Panen Gelar bagi Bulutangkis Indonesia</p>
-            <p class="description">Bulutangkis Indonesia menutup perjuangan di bulan Maret 2024 dengan senyum bahagia. Pasalnya, Maret menjadi bulan panen gelar...</p>
-          </div>
+    <!-- Artikel Terbaru -->
+    <section class="new-article">
+      <h1 class="title-new">Artikel Terbaru</h1>
+      <div class="card-article">
+        <div class="card-items-article">
+          <img src="img/badminton6.jpg" alt="" class="img-new" />
+          <p class="title">Cara Melakukan Teknik Smash dalam Bulu Tangkis</p>
+          <p class="description">Teknik smash merupakan salah satu jenis pukulan dalam permainan bulu tangkis. Smash adalah pukulan yang dilakukan dengan tenaga penuh...</p>
+        </div>
+        <div class="card-items-article">
+          <img src="img/badminton7.jpg" alt="" class="img-new" />
+          <p class="title">Cara Meningkatkan Stamina saat Bermain Badminton</p>
+          <p class="description">Stamina yang optimal sangat penting dalam permainan bulutangkis. Tingkat energi dan daya tahan yang tinggi akan membantu kamu bermain dengan...</p>
+        </div>
+        <div class="card-items-article">
+          <img src="img/badminton8.jpg" alt="" class="img-new" />
+          <p class="title">Indonesia Raih 2 Gelar di Spain Masters 2024, Maret Jadi Bulan Panen Gelar bagi Bulutangkis Indonesia</p>
+          <p class="description">Bulutangkis Indonesia menutup perjuangan di bulan Maret 2024 dengan senyum bahagia. Pasalnya, Maret menjadi bulan panen gelar...</p>
         </div>
       </div>
-      <!-- End Artikel Terbaru -->
+    </section>
+    <!-- End Artikel Terbaru -->
 
-      <!-- Footer -->
-      <div class="container-footer">
-        <h3 class="h3">Contact Us</h3>
-        <ol class="list">
-          <li>
-            <a href="">
-              <img src="img/google.jpg" alt="" class="gambar-footer" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/tele.jpg" alt="" class="gambar-footer" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/wa.jpg" alt="" class="gambar-footer" />
-            </a>
-          </li>
-        </ol>
-        <div class="footer">
-          <footer class="footer1">
-            <p>&copy; Since 2024 |</p>
-            <p>Eureka Sportive |</p>
-            <p>Power by Group 12 Micro Challenge Celerates |</p>
-            <p>Eureka |</p>
-            <p>All rights reserve</p>
-          </footer>
-        </div>
+    <!-- Footer -->
+    <footer>
+      <h3 class="h3">Contact Us</h3>
+      <ol class="list">
+        <li>
+          <a href="">
+            <img src="img/google.jpg" alt="" class="gambar-footer" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/tele.jpg" alt="" class="gambar-footer" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/wa.jpg" alt="" class="gambar-footer" />
+          </a>
+        </li>
+      </ol>
+      <div class="footer">
+        <p>&copy; Since 2024 |</p>
+        <p>Eureka Sportive |</p>
+        <p>Power by Group 12 Micro Challenge Celerates |</p>
+        <p>Eureka |</p>
+        <p>All rights reserve</p>
       </div>
-    </div>
+    </footer>
     <!-- End Footer -->
+
+    <!-- JavaScript -->
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
 
     <script>
       feather.replace({ class: "foo bar", "stroke-width": 2 });
     </script>
+    <!-- End JavaScript -->
   </body>
 </html>

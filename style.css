@@ -4,10 +4,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-/* Style Navbar */
+/* Style Header */
 header {
   background-color: #2c0b09;
   color: #fff;
@@ -19,7 +19,12 @@ header {
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0px -4px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 2px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 26px 0px rgba(255, 255, 255, 0.25) inset, 0px 40px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+#article {
+  text-decoration: underline;
 }
 
 .logo {
@@ -33,6 +38,9 @@ nav ul {
   display: flex;
   padding: 2px;
 }
+nav ul :hover {
+  color: #ff3d00;
+}
 
 li {
   list-style-type: none;
@@ -45,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.btn-cta {
+.dropbtn {
   margin-right: 20px;
   border: none;
   font-size: 20px;
@@ -62,291 +70,40 @@ a {
   align-items: center;
   gap: 6px;
 }
-/* End Style Navbar */
 
-/* Style Artikel */
-.container-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-image: url("img/basket1.jpg");
-  background-size: cover;
-  filter: brightness(110%);
-  margin: 30px 10px 0px 10px;
-  border-radius: 10px;
-}
-
-.title-basket {
-  font-size: xx-large;
-  color: #fff;
-}
-/* End Style Artikel */
-
-/* Style Artikel Popular */
-.container-artikel {
-  background-color: #d9d9d9;
-  margin: 20px 10px 0px 10px;
-  padding: 40px;
-  border-radius: 10px;
-}
-
-.title-artikel {
-  margin-left: 30px;
-  margin-bottom: 20px;
-  color: #510805;
-}
-
-.artikel-basket {
-  display: flex;
-  gap: 40px;
-}
-
-.img-basket {
-  margin-left: 30px;
-  border-radius: 10px;
-  filter: brightness(90%);
-}
-
-.isi-artikel {
-  flex: 1;
-  display: row;
-}
-
-.artikel1 {
-  display: flex;
-  border-radius: 10px;
-}
-
-.img-artikel {
-  border-radius: 10px;
-  filter: brightness(90%);
-}
-
-.p-basket {
-  margin-left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-
-.artikel2 {
-  display: flex;
-  margin-top: 40px;
-  border-radius: 10px;
-}
-/* End Style Artikel Populer */
-
-/* Style Artikel Terbaru */
-.container-new {
-  margin-top: 120px;
-}
-
-.title-new {
-  color: #510805;
-  margin-left: 10px;
-}
-
-.card-article {
-  display: flex;
-  gap: 45px;
-  margin: 30px 10px 0px 10px;
-}
-
-.card-items-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  background-color: #2e0c0a;
-  border-radius: 10px;
-  padding-bottom: 20px;
-}
-
-.img-new {
-  width: 385px;
-  height: 200px;
-  border-radius: 10px;
-}
-
-.title {
-  font-size: 14px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 12px;
   font-weight: bolder;
-  color: #fff;
-  padding: 0px 8px;
 }
 
-.description {
-  font-size: 11px;
-  font-weight: 500;
-  color: #fff;
-  padding: 0px 8px;
-}
-/* End Style Artikel Terbaru */
-
-/* Style Footer */
-.container-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 125px 0px 0px 0px;
-  background-color: #2c0b09;
-  padding: 10px;
-}
-
-.h3 {
-  color: #fff;
-  font-size: x-large;
-}
-
-.list {
-  display: flex;
-}
-
-.gambar-footer {
-  width: 20px;
-  height: 20px;
-  mix-blend-mode: exclusion;
-  filter: brightness(100%);
-}
-
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 5px;
-}
-
-.footer1 {
-  background-color: #2c0b09;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 11px;
-}
-/* End Style Article */
-
-/* Style Judul Artikel Workout */
-.container-title-workout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-image: url("img/workout1.jpg");
-  background-size: cover;
-  filter: brightness(110%);
-  margin: 30px 10px 0px 10px;
-  border-radius: 10px;
-}
-
-.title-workout {
-  font-size: xx-large;
-  color: #fff;
-}
-/* End Style Workout */
-
-/* Style Judul Artikel Badminton */
-.container-title-badminton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-image: url("img/badminton1.jpg");
-  background-size: cover;
-  filter: brightness(110%);
-  margin: 30px 10px 0px 10px;
-  border-radius: 10px;
-}
-
-.title-badminton {
-  font-size: xx-large;
-  color: #fff;
-}
-/* End Style Badminton */
-
-/* Style Judul Artikel Sepakbola */
-.container-title-sepakbola {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-image: url("img/bola1.jpg");
-  background-size: cover;
-  filter: brightness(110%);
-  margin: 30px 10px 0px 10px;
-  border-radius: 10px;
-}
-
-.title-sepakbola {
-  font-size: xx-large;
-  color: #fff;
-}
-/* End Style Judul Artikel Sepakbola */
-
-/* Style Judul Artikel Voli */
-.container-title-voli {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-image: url("img/voli1.jpg");
-  background-size: cover;
-  filter: brightness(110%);
-  margin: 30px 10px 0px 10px;
-  border-radius: 10px;
-}
-
-.title-voli {
-  font-size: xx-large;
-  color: #fff;
-}
-/* End Style Judul Artikel Voli */
-
-/* Style Judul Artikel Renang */
-.container-title-renang {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-image: url("img/renang1.jpg");
-  background-size: cover;
-  filter: brightness(110%);
-  margin: 30px 10px 0px 10px;
-  border-radius: 10px;
-}
-
-.title-renang {
-  font-size: xx-large;
-  color: #fff;
-}
-/* End Style Judul Artikel Renang */
-
-
-/* Style Halaman index.html / Kategori Artikel */
-
-.btn-cta1 {
-  margin-right: 20px;
-  border: none;
-  font-size: 20px;
-  padding: 0px 5px;
-  width: 100px;
-  background-color: #fff;
-  font-size: small;
-  font-weight: 600;
-  cursor: pointer;
-  color: #2c0b09;
+.dropdown-content a {
+  color: black;
+  padding: 7px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
   border-radius: 5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 6px;
 }
 
-.container6 {
+.dropdown-content a:hover {
+  background: #942720;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+/* End Style Header */
+
+/* Style Main Title */
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,8 +118,10 @@ a {
   font-size: xx-large;
   color: #fff;
 }
+/* End Style Main Title */
 
-.container7 {
+/* Style Explore Article */
+article {
   max-width: 1200px;
   max-height: auto;
 }
@@ -446,4 +205,557 @@ a {
   filter: brightness(100%);
   border-radius: 5%;
 }
-/* End Style Halaman Kategori Artikel */
+/* End Style Explore Article */
+
+/* Style Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 125px 0px 0px 0px;
+  background: linear-gradient(213deg, #86211d 17.43%, #1e1e1e 77.99%);
+  padding: 10px;
+}
+
+.h3 {
+  color: #fff;
+  font-size: x-large;
+}
+
+.list {
+  display: flex;
+}
+
+.gambar-footer {
+  width: 20px;
+  height: 20px;
+  mix-blend-mode: exclusion;
+  filter: brightness(100%);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 11px;
+  width: 100%;
+  margin-top: 5px;
+}
+/* End Style Footer */
+
+/* Style Title Article Basket  */
+.main-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/basket1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-basket {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Title Article Basket */
+
+/* Style Artikel Popular */
+.container-artikel {
+  background-color: #d9d9d9;
+  margin: 20px 10px 0px 10px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.title-artikel {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #510805;
+}
+
+.artikel-basket {
+  display: flex;
+  gap: 40px;
+}
+
+.img-basket {
+  margin-left: 30px;
+  border-radius: 10px;
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.isi-artikel {
+  flex: 1;
+  display: row;
+}
+
+.artikel1 {
+  display: flex;
+  border-radius: 10px;
+}
+
+.img-artikel {
+  border-radius: 10px;
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.p-basket {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.artikel2 {
+  display: flex;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+/* End Style Artikel Populer */
+
+/* Style Artikel Terbaru */
+.new-article {
+  margin-top: 120px;
+}
+
+.title-new {
+  color: #510805;
+  margin-left: 10px;
+}
+
+.card-article {
+  display: flex;
+  gap: 45px;
+  margin: 30px 10px 0px 10px;
+}
+
+.card-items-article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #2e0c0a;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.img-new {
+  width: 385px;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #fff;
+  padding: 0px 8px;
+}
+
+.description {
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0px 8px;
+}
+/* End Style Artikel Terbaru */
+
+/* Style Judul Artikel Workout */
+.container-title-workout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/workout1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-workout {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Workout */
+
+/* Style Judul Artikel Sepakbola */
+.container-title-sepakbola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/bola1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-sepakbola {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Judul Artikel Sepakbola */
+
+/* Style Judul Artikel Badminton */
+.container-title-badminton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/badminton1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-badminton {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Badminton */
+
+/* Style Judul Artikel Voli */
+.container-title-voli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/voli1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-voli {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Judul Artikel Voli */
+
+/* Style Judul Artikel Renang */
+.container-title-renang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("img/renang1.jpg");
+  background-size: cover;
+  filter: brightness(110%);
+  margin: 30px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.title-renang {
+  font-size: xx-large;
+  color: #fff;
+}
+/* End Style Judul Artikel Renang */
+
+/* Style Halaman Detail Artikel */
+/* Style Navbar */
+.nav-article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 0px 30px 40px;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  gap: 4px;
+  transition: ease;
+}
+
+.nav-article :hover {
+  transform: scale(1.1);
+}
+/* End Style Navbar */
+
+/* Style Judul Artikel */
+.title-detail {
+  color: #2e0c0a;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 10px 30px 10px;
+  padding: 0px 15px;
+}
+
+.main-img {
+  width: 1243px;
+  margin: 0px 10px 30px 10px;
+}
+/* End Style Judul Artikel */
+
+/* Style Teks Artikel */
+.detail-paragraf {
+  margin: 0px 15px 30px 10px;
+  color: #000;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.detail-paragraf2 {
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.detail-paragraf4 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 20px;
+}
+/* End Style Teks Artikel */
+
+/* Style Content Article */
+.card-detail {
+  margin: 10px 20px 30px 10px;
+}
+
+.title-detailbasket {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.card-itemdetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.detail-img {
+  width: 311px;
+  height: 175px;
+  flex-shrink: 0;
+}
+
+.p-detailbasket {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-article {
+  margin-bottom: 20px;
+}
+
+.p1 {
+  margin-bottom: 20px;
+}
+.p2 {
+  margin-bottom: 20px;
+}
+.p3 {
+  margin-bottom: 20px;
+}
+/* End Style Content Article */
+/* End Style Halaman Detail Artikel */
+
+/* Media Screen index */
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 15px;
+    border-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .dropbtn {
+    margin-bottom: 15px;
+  }
+  article {
+    margin: 30px 0px 10px 0px;
+  }
+  .title1 {
+    font-size: 16px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px;
+  }
+  .card-item1 {
+    padding: 75px;
+  }
+  footer {
+    margin-top: 75px;
+  }
+  .footer {
+    font-size: 6px;
+    gap: 0px;
+  }
+}
+/* End Media Screen Index */
+
+/* Media Screen Explore Article */
+@media screen and (max-width: 768px) {
+  .main-basket {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-title-voli {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-title-renang {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-title-badminton {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-title-workout {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-title-sepakbola {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-artikel {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+  .artikel-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-basket {
+    margin: 0px 0px 0px 0px;
+    width: 350px;
+  }
+  .isi-artikel {
+    margin: 0px 20px 0px 20px;
+  }
+  .p-basket {
+    font-size: 11px;
+  }
+  .new-article {
+    margin-top: 100px;
+  }
+  .card-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-items-article {
+    width: 360px;
+  }
+
+  .img-new {
+    width: 360px;
+  }
+}
+/* End Media Screen Explore Article */
+
+/* Media Screen Halaman Detail Artikel */
+@media screen and (max-width: 768px) {
+  .nav-article {
+    margin: 5px 65% 30px 10px;
+  }
+  .title-detail {
+    margin: 0px 0px 40px 10px;
+    padding: 0px 0px;
+    font-size: 20px;
+  }
+  .main-img {
+    width: 100%;
+    height: 170px;
+    margin: 0px 0px 0px 0px;
+  }
+  .detail-paragraf {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .card-detail {
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-itemdetail {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px 0px 0px 0px; */
+  }
+  .title-detailbasket {
+    margin: 0px 10px 20px 10px;
+    font-size: 14px;
+  }
+  .detail-img {
+    width: 300px;
+    height: auto;
+  }
+  .p-detailbasket {
+    margin: 0px 10px 0px 10px;
+    font-size: 13px;
+  }
+  .detail-paragraf4 {
+    margin-bottom: 10px;
+  }
+  .p1 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+/* End Media Screen Halaman Detail Artikel */

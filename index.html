@@ -1,145 +1,165 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kategori Olahraga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div class="container">
-        <div>
-            <header>
-                <h1 class="logo">Eureka Sportive</h1>
-                <nav>
-                    <ul>
-                        <li> <a href="https://vmonreve.github.io/HomeLogin/">Home</a> </li>
-                        <li> <a href="#">About Us</a> </li>
-                        <li> <a href="#">Article</a> </li>
-                        <li> <a href="https://vmonreve.github.io/ChatWithTrainer/">Chat With Trainer</a> </li>
-                    </ul>
-                </nav>
-                <button class="btn-cta1"> <i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
-            </header>
-        </div>
-
-        <div class="container6">
-            <h1 class="title1">Choose Your Sport Article</h1>
-        </div>
-
-        <div class="container7">
-            <div class="card1">
-                <div class="gambar-basket">
-                    <div class="card-item1">
-                        <img src="img/artikel2.jpg" alt="" class="gambar1">
-                        <p class="isi">Basket</p>
-                        <button class="tombol" onclick="goToBasket()"> Explore Article</button>
-                    </div>
-                </div>
-                <div class="gambar-barbel">
-                    <div class="card-item1">
-                        <img src="img/artikel3.jpg" alt="" class="gambar1">
-                        <p class="isi">Workout</p>
-                        <button class="tombol" onclick="goToWorkout()">Explore Article</button>
-                    </div>
-                </div>
-                <div class="gambar-bola">
-                    <div class="card-item1">
-                        <img src="img/artikel4.jpg" alt="" class="gambar1">
-                        <p class="isi">Sepa Bola</p>
-                        <button class="tombol" onclick="goToSepakbola()">Explore Article</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container7">
-            <div class="card1">
-                <div class="gambar-bulu">
-                    <div class="card-item1">
-                        <img src="img/artikel5.jpg" alt="" class="gambar1">
-                        <p class="isi">Badmintoon</p>
-                        <button class="tombol" onclick="goToBadminton()">Explore Article</button>
-                    </div>
-                </div>
-                <div class="gambar-voli">
-                    <div class="card-item1">
-                        <img src="img/artikel6.jpg" alt="" class="gambar1">
-                        <p class="isi">Voli</p>
-                        <button class="tombol" onclick="goToVoli()">Explore Article</button>
-                    </div>
-                </div>
-                <div class="gambar-renang">
-                    <div class="card-item1">
-                        <img src="img/artikel7.jpg" alt="" class="gambar1">
-                        <p class="isi">Renang</p>
-                        <button class="tombol" onclick="goToRenang()">Explore Article</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="container-footer">
-        <h3 class="h3">Contact Us</h3>
-        <ol class="list">
-          <li>
-            <a href="">
-              <img src="img/google.jpg" alt="" class="gambar-footer" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/tele.jpg" alt="" class="gambar-footer" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/wa.jpg" alt="" class="gambar-footer" />
-            </a>
-          </li>
-        </ol>
-        <div class="footer">
-          <footer class="footer1">
-            <p>&copy; Since 2024 |</p>
-            <p>Eureka Sportive |</p>
-            <p>Power by Group 12 Micro Challenge Celerates |</p>
-            <p>Eureka |</p>
-            <p>All rights reserve</p>
-          </footer>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Eureka Sportive</h1>
+      <nav>
+        <ul>
+          <li><a href="https://vmonreve.github.io/HomeLogin/">Home</a></li>
+          <li><a href="https://vmonreve.github.io/AboutUs/">About Us</a></li>
+          <li><a href="#" id="article">Article</a></li>
+          <li><a href="https://vmonreve.github.io/ChatWithTrainer/">Chat With Trainer</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Title -->
+    <main>
+      <h1 class="title1">Choose Your Sport Article</h1>
+    </main>
+    <!-- End Main Title -->
+
+    <!-- Explore Article -->
+    <article>
+      <div class="card1">
+        <div class="gambar-basket">
+          <div class="card-item1">
+            <img src="img/artikel2.jpg" alt="" class="gambar1" />
+            <p class="isi">Basket</p>
+            <button class="tombol" onclick="goToBasket()">Explore Article</button>
+          </div>
+        </div>
+        <div class="gambar-barbel">
+          <div class="card-item1">
+            <img src="img/artikel3.jpg" alt="" class="gambar1" />
+            <p class="isi">Workout</p>
+            <button class="tombol" onclick="goToWorkout()">Explore Article</button>
+          </div>
+        </div>
+        <div class="gambar-bola">
+          <div class="card-item1">
+            <img src="img/artikel4.jpg" alt="" class="gambar1" />
+            <p class="isi">Sepa Bola</p>
+            <button class="tombol" onclick="goToSepakbola()">Explore Article</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="card1">
+        <div class="gambar-bulu">
+          <div class="card-item1">
+            <img src="img/artikel5.jpg" alt="" class="gambar1" />
+            <p class="isi">Badmintoon</p>
+            <button class="tombol" onclick="goToBadminton()">Explore Article</button>
+          </div>
+        </div>
+        <div class="gambar-voli">
+          <div class="card-item1">
+            <img src="img/artikel6.jpg" alt="" class="gambar1" />
+            <p class="isi">Voli</p>
+            <button class="tombol" onclick="goToVoli()">Explore Article</button>
+          </div>
+        </div>
+        <div class="gambar-renang">
+          <div class="card-item1">
+            <img src="img/artikel7.jpg" alt="" class="gambar1" />
+            <p class="isi">Renang</p>
+            <button class="tombol" onclick="goToRenang()">Explore Article</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- End Explore Article -->
+
+    <!-- Footer -->
+    <footer>
+      <h3 class="h3">Contact Us</h3>
+      <ol class="list">
+        <li>
+          <a href="">
+            <img src="img/google.jpg" alt="" class="gambar-footer" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/tele.jpg" alt="" class="gambar-footer" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/wa.jpg" alt="" class="gambar-footer" />
+          </a>
+        </li>
+      </ol>
+      <div class="footer">
+        <p>&copy; Since 2024 |</p>
+        <p>Eureka Sportive |</p>
+        <p>Power by Group 12 Micro Challenge Celerates |</p>
+        <p>Eureka |</p>
+        <p>All rights reserve</p>
+      </div>
+    </footer>
     <!-- End Footer -->
 
+    <!-- JavaScript -->
     <script>
-        function goToBasket() {
-            window.location.href = 'basket.html';
-        }
-        function goToWorkout() {
-            window.location.href = 'workout.html';
-        }
-        function goToSepakbola() {
-            window.location.href = 'sepakbola.html';
-        }
-        function goToBadminton() {
-            window.location.href = 'badminton.html';
-        }
-        function goToVoli() {
-            window.location.href = 'voli.html';
-        }
-        function goToRenang() {
-            window.location.href = 'renang.html';
-        }
+      function goToBasket() {
+        window.location.href = "basket.html";
+      }
+      function goToWorkout() {
+        window.location.href = "workout.html";
+      }
+      function goToSepakbola() {
+        window.location.href = "sepakbola.html";
+      }
+      function goToBadminton() {
+        window.location.href = "badminton.html";
+      }
+      function goToVoli() {
+        window.location.href = "voli.html";
+      }
+      function goToRenang() {
+        window.location.href = "renang.html";
+      }
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
     </script>
 
     <script>
-        feather.replace();
-      </script>
-</body>
-
+      feather.replace();
+    </script>
+    <!-- End JavaScript -->
+  </body>
 </html>
